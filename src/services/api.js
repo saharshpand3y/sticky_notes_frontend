@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "http://192.168.29.199:5000";
 
 // Helper function to get Authorization headers
 const getAuthHeaders = () => {
@@ -14,7 +14,6 @@ const getAuthHeaders = () => {
     },
   };
 };
-
 
 // Centralized error handler for API calls
 const handleApiError = (error) => {
@@ -47,7 +46,6 @@ export const login = async (username, password) => {
     handleApiError(error);
   }
 };
-
 
 // Fetch all notes
 export const getNotes = async () => {
